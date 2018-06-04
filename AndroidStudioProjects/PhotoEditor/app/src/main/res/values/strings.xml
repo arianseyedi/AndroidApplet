@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CameraApp</string>
+    <string name="ReflectY">Reflect-Y</string>
+    <string name="ReflectX">Reflect-X</string>
+    <string name="Rotate90">Rotate90</string>
+    <string name="Start">Start</string>
+</resources>
