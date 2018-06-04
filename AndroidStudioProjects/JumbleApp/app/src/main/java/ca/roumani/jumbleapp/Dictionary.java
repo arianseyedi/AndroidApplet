@@ -21,8 +21,8 @@ import java.util.Set;
 
 /**
  * Create word signature for all the words in the dictionary.
- * @author Arian Seyedi
  *
+ * @author Arian Seyedi
  */
 public class Dictionary {
     Map<Map<Character, Integer>, List<String>> dictionaryFootprint
