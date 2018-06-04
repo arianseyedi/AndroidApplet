@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/R"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ca.roumani.tipcalculator.TipCalculatorActivity">
+
+    <TextView
+        android:id="@+id/weightLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Enter Check Amount" />
+
+    <EditText
+        android:id="@+id/checkAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/weightLabel"
+        android:editable="false"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/heightLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="55dp"
+        android:text="Enter Number of People" />
+
+    <EditText
+        android:id="@+id/numberOfPeople"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/heightLabel"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/heightLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/heightLabel"
+        android:layout_centerVertical="true"
+        android:onClick="buttonClicked"
+        android:text="Calculate Tip" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/checkAmount"
+        android:layout_marginTop="15dp"
+        android:text="Select Tip " />
+
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="37dp"
+        android:text="Total"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/perPerson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/total"
+        android:text="Per Person"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="25dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_below="@+id/textView"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/twentyTipRadBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_alignRight="@+id/textView"
+            android:layout_below="@+id/textView"
+            android:layout_gravity="center"
+            android:button="@drawable/abc_btn_radio_material"
+            android:checked="false"
+            android:clickable="true"
+            android:enabled="true"
+            android:longClickable="false"
+            android:text="20%"
+            android:textColor="#2f2f2f" />
+
+        <RadioButton
+            android:id="@+id/fifteenTipRadBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_gravity="center"
+            android:layout_toEndOf="@+id/textView"
+            android:layout_toRightOf="@+id/textView"
+            android:button="@drawable/abc_btn_radio_material"
+            android:checked="true"
+            android:clickable="true"
+            android:enabled="true"
+            android:longClickable="false"
+            android:text="15%"
+            android:textColor="#2f2f2f" />
+
+        <RadioButton
+            android:id="@+id/tenTipRadBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/fifteenTipRadBtn"
+            android:layout_gravity="center"
+            android:layout_toEndOf="@+id/perPerson"
+            android:layout_toRightOf="@+id/perPerson"
+            android:autoText="true"
+            android:button="@drawable/abc_btn_radio_material"
+            android:checked="false"
+            android:clickable="true"
+            android:enabled="true"
+            android:longClickable="false"
+            android:text="10%"
+            android:textColor="#2f2f2f" />
+
+    </RadioGroup>
+
+
+</RelativeLayout>
