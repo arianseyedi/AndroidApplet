@@ -4,7 +4,7 @@ Welcome to AndroidApplet repository. Here I have uploaded some basic Android App
 
 ### **Brief Description:**  
 
-- **JumbleApp**<sup>*</sup>: this app takes as input a jumbled word and unscrambles it. That is, it provides all words (from a given dictionary) that are an unscrambling of the given input. The view and the controller have already been implemented. Even a part of the model has already been given.  
+- **JumbleApp**<sup>*</sup>: this app takes as input a jumbled word and unscrambles it. That is, it provides all words (from a given dictionary) that can be made using *all* the letters in the input. The view and the controller have already been implemented. Even a part of the model has already been given.  
 
 - **PhotoEdit**<sup>*</sup>: this app reflexts and rotates a photo taken within the app itself.  
 
