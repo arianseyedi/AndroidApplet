@@ -10,4 +10,4 @@ Welcome to AndroidApplet repository. Here I have uploaded some basic Android App
 
 - **TipCalculator**<sup>*</sup>: this app calculates tip based on desired percentage and of course the total amount of the bill. Using an MVC model I implemented all three letters.
 
-- **Note***: These apps were coded in MVC design pattern and are the result of the my work only. App ideas and description belong to the  EECS1022 course which I took in summer 2017, which you can check out  [here](https://www.eecs.yorku.ca/course_archive/2016-17/S/1022/syllabus.html "EECS1022 Summer2017").
+- **Note***: App ideas and description belong to the  EECS1022 course which I took in summer 2017, which you can check out  [here](https://www.eecs.yorku.ca/course_archive/2016-17/S/1022/syllabus.html "EECS1022 Summer2017").
